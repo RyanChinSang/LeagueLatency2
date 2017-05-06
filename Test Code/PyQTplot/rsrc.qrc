@@ -1,0 +1,39 @@
+<RCC>
+  <qresource prefix="avgPingIcons">
+    <file>images/dec.png</file>
+    <file>images/inc.png</file>
+    <file>images/null.png</file>
+  </qresource>
+  <qresource prefix="windIcon">
+    <file>images/icon.ico</file>
+  </qresource>
+  <qresource prefix="addIcon">
+    <file>images/del.png</file>
+    <file>images/add.png</file>
+  </qresource>
+  <qresource prefix="refrshIcon">
+    <file>images/refsh.png</file>
+  </qresource>
+  <qresource prefix="currPingIcons">
+    <file>images/stgd.png</file>
+    <file>images/stwr.png</file>
+    <file>images/unstbd.png</file>
+    <file>images/unstgd.png</file>
+    <file>images/unstlbd.png</file>
+    <file>images/unstlgd.png</file>
+    <file>images/unstlwr.png</file>
+    <file>images/unstwr.png</file>
+    <file>images/vunstbd.png</file>
+    <file>images/vunstgd.png</file>
+    <file>images/vunstwr.png</file>
+  </qresource>
+  <qresource prefix="menuBarIcons">
+    <file>images/quit.png</file>
+    <file>images/help.png</file>
+    <file>images/about.png</file>
+    <file>images/version.png</file>
+    <file>images/update.png</file>
+    <file>images/load.png</file>
+    <file>images/settings.png</file>
+  </qresource>
+</RCC>

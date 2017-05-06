@@ -1,0 +1,20 @@
+NOTE: All dates are in the format: dd.mm.yy
+
+dev0.1a (05.05.17)
+tldr; Barely-functional. Unstable.
+01- Able to plot in real-time using PlotWidget, but slows down noticeably at 15-20 seconds in.
+02- Can Pause the plot, and then Resume it using the push button.
+03- Pop up Dialog comes up when trying to use the "Add a server" function.
+    i. The program is able to capture the input information when pressed 'OK'.
+   ii. No further processing is done wit that information (yet) - waiting for saveData module.
+  iii. Upon closing the Dialog, the whole program will close (unintended & unwanted functionality).
+       NB1: see TODO[HIGH]#05[NB1]
+   iv. Unhealthy work-around using pyqtgraph.exit()
+       NB1: This only forces python to close graciously...
+04- Able to change all UIs (.ui) and resource files (.qrc) on the fly.
+    i. All .ui are loaded at the start of the mainfile
+   ii. The resource file is auto-generated using rccauto (rccauto.py) custom dependency
+05- Alot of errors are being thrown around
+    i. Unhealthy workaround using wpa.modWin(sys.executable, opt='hide') from custom dependency WinPyAdmin to hide the
+       elevated console.
+06- First Git commit

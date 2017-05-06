@@ -1,0 +1,15 @@
+0- after desinging UI with QT designer, open cmd as admin
+
+1- change to directory of ui files
+cd C:\Users\ryanc\PycharmProjects\LeagueLatency\BETA\Test Code\PyQTplot
+
+2- run the following command (change youfile and generated to required/desired filenames)
+"C:\Python27\Lib\site-packages\PyQt4\pyuic4.bat" youfile.ui >generated.py -w
+OR
+pyuic4 youfile.ui >generated.py -w
+
+3- go into generated.py and take the last class definition: class Generated(QtGui.QMainWindow, Ui_MainWindow)
+
+4- go into main file and import using: from generated import Ui_generated
+
+5- paste the last class defifition into main file

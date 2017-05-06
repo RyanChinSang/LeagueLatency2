@@ -1,0 +1,3 @@
+Currently LL2 is in development.
+
+To try it, please go to the directory ..\Test Code\PyQTplot\LL2.py

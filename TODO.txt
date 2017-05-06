@@ -1,0 +1,76 @@
+Priority Info:
+HIGH: If accomplished would add very meaningful functionality. These are usually challenging to accomplish.
+MED : If accomplished would make the program more conformable, informative and user-friendly. Helps standardization.
+LOW : If accomplished would add more meaning to either or both of documentation and presentation.
+
+Reference info:
+template: TODO[Priority_Info]#01.a.i.A.I.01.a.i.A.I.01... etc[NB[#-#]]
+for example: TODO[HIGH]#03.c.ii.D.IV[NB1]
+or, for a range of Notes (NB): TODO[HIGH]#03.c.ii.D.IV[NB[1-3]]
+
+Tag Info:
+(WIP): Work In Progress
+(UND): UNDecided feature/function
+(ALT): proposed ALTernative feature/function
+(RES): more RESearch required/needed to better solve the problem
+(BIG): a very large module/feature-set
+(MDN): More Documentation Needed to describe the situation properly
+(done): feature/function works as desired
+(DDL: [version]): Desired DeadLine for a feature/function to be (done) by [version] release.
+(REF: [reference path]): REFerence to some linked issue that can be found at [reference path]
+
+HIGH:
+01- Enhance pypingn module to handle non-responses and errors (WIP) (RES)
+    a. Packet loss; [sent, received, loss], timeout optimization
+02- Link code to click-able objects in UI to handle functions: (BIG)
+    a. For Menu Bar and all it's functionality (BIG) (MDN)
+       i. Write functions
+      ii. Test functions
+    b. For Refresh button
+       i. Write functions
+      ii. Test functions
+     NB1: The intent is to clear the graph while keeping the most recent statistics and continue plotting
+    c. For Add a server button
+       i. Write function (WIP)
+          A. Pop-up working, but when closing the QDialog, the program exits in error
+          B. Able to catch the input data on Accept() (the OK button)
+          C. (ALT) CHANGE OVER TO LL3.ui (UND)
+             I. Write function to show the table data in "servs.xlsx"
+            II. Tie functionality to 02.d.ii.
+      ii. Test function (WIP)
+    d. Drop-down menu for Server list
+       i. Link to the spreadsheet "servs.xlsx" to show all the records' "Name" (WIP)
+      ii. Write functions for:
+          A. Find Address given a Name (done)
+          B. Add record given a Name and Address (done)(UND)
+          C. Delete record given a Name and/or Address (UND)
+          D. (ALT) have a Table Widget (QObject) handle all the editing (UND)
+     iii. (ALT) Use ".csv" format instead? (UND)
+03- Link code to actively change the icons on buttons to mimic what is done in LL1
+    i. Curr. Ping
+   ii. Avg. Ping
+  iii. Play/Pause for Resume/Pause button (WIP)
+       A. The text changes on clicking (done)
+       B. The graph pauses and resumes on clicking (done)
+       C. Insert/Create icon and have that change accordingly (WIP)
+04- Live Plotting slows down considerably at 15-20 seconds
+    i. This may be due to the dynamically increasing numpy arrays
+   ii. Solution is to use a buffer, but the buffer data layout is unsupported by the PlotWidget (RES) (DDL: v1.0a)
+05- Fix nasty handling of events? (RES) When opening Dialog from MainWindow and then closing (REF: #02.c.i.A.)
+    (DDL: dev0.5a)
+    NB1: "QObject::startTimer: QTimer can only be used with threads started with QThread"
+
+
+MED:
+01- Sort local dependencies into correct/standard folders (WIP)
+    i. (DDL: dev0.3a) release this in a Stable folder (and with dependencies in correctly named sub-folders)
+02- Clean up code (BIG) (MDN)
+03- Add keyboard shortcuts to functionality (MDN)
+    a. Best use QTDesigner for this.
+04- Revise and finalize Icons in the UI (DDL: v1.0a)
+
+
+LOW:
+01- Better formatting the support documents
+    a. Alphabetical ordering etc. (MDN)
+02- Use a better platform for documenting (RES) (DDL: v1.0a)

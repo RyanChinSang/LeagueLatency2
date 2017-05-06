@@ -1,0 +1,20 @@
+<RCC>
+  <qresource prefix="avgPingIcons">
+    <file>inc.png</file>
+    <file>null.png</file>
+    <file>dec.png</file>
+  </qresource>
+  <qresource prefix="currPingIcons">
+    <file>stgd.png</file>
+    <file>stwr.png</file>
+    <file>unstbd.png</file>
+    <file>unstgd.png</file>
+    <file>unstlbd.png</file>
+    <file>unstlgd.png</file>
+    <file>unstlwr.png</file>
+    <file>unstwr.png</file>
+    <file>vunstbd.png</file>
+    <file>vunstgd.png</file>
+    <file>vunstwr.png</file>
+  </qresource>
+</RCC>
